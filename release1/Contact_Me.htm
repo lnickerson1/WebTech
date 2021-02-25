@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the creator of the website feautring a complete overview of the 2019 Stanley Cup Finals - Boston Bruins vs. St. Louis Blues."/>
+    <meta name="keywords" content="Boston Bruins, St. Louis Blues, NHL, Stanley Cup, Finals, 2019, Ice Hockey, Contact, Email, Phone, Submit Request"/>
+    <meta name="author" content="Logan Nickerson"/>
+    <title>2019 Stanley Cup Finals - Contact Me</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+    <style>
+        Select, textarea {font-size: 20px; line-height: 200%; font-family: 'Times New Roman', Times, serif; margin: -10px 0px 0px 0px;}
+    </style>
+</head>
+<body>
+    <div class="Nav_Bar">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="Boston_Bruins.htm">Boston Bruins</a></li>
+            <li><a href="St_Louis_Blues.htm">St. Louis Blues</a></li>
+            <li class="Dropdown">
+              <a href="Games.htm">Games</a>
+                <div class="Dropdown_Content">
+                    <a href="Game_1.htm">Game 1</a>
+                    <a href="Game_2.htm">Game 2</a>
+                    <a href="Game_3.htm">Game 3</a>
+                    <a href="Game_4.htm">Game 4</a>
+                    <a href="Game_5.htm">Game 5</a>
+                    <a href="Game_6.htm">Game 6</a>
+                    <a href="Game_7.htm" class="Last">Game 7</a>
+                </div>
+            </li>
+            <li><a href="Celebrations.htm">Celebrations</a></li>
+            <li><a href="About_Me.htm">About Me</a></li>
+            <li><a href="Contact_Me.htm" id="Active">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <div id="Page_Header" style="text-align: center; margin-top: 5px;">
+        <h1 style="display: inline; vertical-align: middle;">Contact Me</h1>
+    </div>
+
+    <div id="External_Information_Section">
+        <h2 style="margin-top: 0px;">External Methods</h2>
+        <ol>
+            <li><span class="Bold">Phone:</span> (207)632-0336)</li>
+            <li><span class="Bold">Email:</span> lnickerson1@babson.edu</li>
+        </ol>
+    </div>
+
+    <div id="Internal_Section">
+        <h2>Internal Form</h2>
+        <form method="post" action="https://lnickerson1.github.io/WebTech/release1/mailer.php">
+            <ol>
+                <li><span class="Bold">First Name:</span><input type="text" name="First"/></li>
+                <li><span class="Bold">Last Name:</span><input type="text" name="Last"/></li>
+                <li><span class="Bold">Nature of reason for contact:</span>
+                    <ol>
+                        <li><input type="radio" name="Reason" value="Question"/>Question</li>
+                        <li><input type="radio" name="Reason" value="Comment"/>Comment</li>
+                        <li><input type="radio" name="Reason" value="Problem"/>Problem</li>
+                        <li><input type="radio" name="Reason" value="Other"/>Other</li>
+                    </ol>
+                </li>
+                <li>
+                    Please select the subject in context:
+                    <select name="Subject">
+                        <option value="Website" selected="selected">Whole Website</option>
+                        <option value="Home">Home Page</option>
+                        <option value="Boston_Bruins">Boston Bruins Page</option>
+                        <option value="St_Louis_Blues">St. Louis Blues Page</option>
+                        <option value="Games">Games Page</option>
+                        <option value="Game1">Game 1 Page</option>
+                        <option value="Game1">Game 2 Page</option>
+                        <option value="Game1">Game 3 Page</option>
+                        <option value="Game1">Game 4 Page</option>
+                        <option value="Game1">Game 5 Page</option>
+                        <option value="Game1">Game 6 Page</option>
+                        <option value="Game1">Game 7 Page</option>
+                        <option value="Celebrations">Celebrations Page</option>
+                        <option value="About_Me">About Me Page</option>
+                        <option value="Contact_Me">Contact Me Page</option>
+                    </select>
+                </li>
+                <li>
+                    Please type your response below:<br/>
+                    <textarea name="Comments" rows="5" cols="50"></textarea>
+                </li>
+                <li>
+                    <button type="submit" name="submit" value="submit">Submit</button>
+                    <button type="reset" name="reset" value="reset" style="margin-left: 15px;">Reset</button>
+                </li>
+            </ol>
+        </form>
+    </div>
+
+</body>
+</html>
