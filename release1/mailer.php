@@ -1,6 +1,6 @@
 <?PHP 
 $to = "lnickerson1@babson.edu"; 
-$subject = "Results from your Request Info form";
+$subject = "Results from your Contact Me form";
 $headers = "From: Form Mailer";
 $forward = 0;
 $location = "";
@@ -28,7 +28,7 @@ else {
 
 $sentmail = @mail($to, $subject, $msg, $headers); 
 if($sentmail){
-echo "Email Has Been Sent.";
+echo "Email Has Been Sent. ";
 }
 else {
 echo "Cannot Send Email. The message that would have been sent is:<br>";
