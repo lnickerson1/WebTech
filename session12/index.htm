@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>JS Branching In-Class Activity</title>
+	<script>
+		function pw_check()
+			{
+				if (document.getElementById("password_guess").value=="redsox")
+					{
+						document.getElementById("page").style.backgroundColor="green";
+					}
+				else if (document.getElementById("password_guess").value=="yankees")
+					{
+						document.getElementById("page").style.backgroundColor="green";
+					}
+				else
+					{
+						document.getElementById("page").style.backgroundColor="red";
+					}
+			}
+		function fs_change()
+			{
+				if (document.getElementById("large_font_size").checked)
+					{
+						document.getElementById("h1").style.fontSize="30pt";
+					}
+				else if (document.getElementById("small_font_size").checked)
+					{
+						document.getElementById("h1").style.fontSize="18pt";
+					}
+			}
+		function toggle()
+			{
+				if (document.getElementById("page").style.backgroundColor=="green")
+					{
+						document.getElementById("page").style.backgroundColor="red";
+						document.getElementById("password_guess").value="dolphins";
+					}
+				else if (document.getElementById("page").style.backgroundColor=="red")
+					{
+						document.getElementById("page").style.backgroundColor="green";
+						document.getElementById("password_guess").value="redsox";
+					}
+			}
+	</script>
+  </head>
+
+  <body id="page">
+	<h1 id="h1" style="font-size:24pt">JS Branching In-Class Activity</h1>
+
+	<p>Instructions: When the user enters redsox or yankees as the password and clicks the Login button, the page background color should turn to green.  Any other password should turn the background color to red when the login button is pressed.  When the user selects a large font size, the font size of the h1 tag should become 30pt.  If the user selects a small font size, the font size of the h1 tag should become 18pt.  If the user clicks the Toggle button when the background is green, the background color will change to red and the entry in the password box will change to dolphins. If the user clicks the Toggle button when the background is red, the background color will change to green and the entry in the password box will change to redsox.  If the background color was neither red nor green when the Toggle button is clicked, nothing should happen.</p>
+
+	<hr />
+
+	<p>Enter password: <input type="text" id="password_guess" />
+		<br />
+		<button id="pw_check_button" onclick="pw_check()">Login</button>
+	</p>
+
+	<p>H1 Font Size: 
+		Large: <input type="radio" id="large_font_size" name="font_size" value="large" onchange="fs_change()"/> 
+		Small <input type="radio" id="small_font_size" name="font_size" value="small" onchange="fs_change()"/>
+	</p>
+
+	<p>
+		<button id="toggle_button" onclick="toggle()">Toggle Page Background Color</button>
+	</p>
+  </body>
+</html>
