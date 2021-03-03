@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+	td {padding-right:40px}
+	</style>
+	<script>
+		function check()
+			{
+				if (document.getElementById("fname").value=="")
+					{
+						alert ("First name is required");
+						document.getElementById("fname").focus();
+						return false;
+					}
+				else if (document.getElementById("lname").value=="")
+					{
+						alert ("Last name is required");
+						document.getElementById("lname").focus();
+						return false;
+					}
+				else if (document.getElementById("images").checked==false && document.getElementById("css").checked==false && document.getElementById("tables").checked==false && document.getElementById("forms").checked==false)
+					{
+						alert ("At least one fun topic is required");
+						return false;
+					}
+				else if (document.getElementById("gradyear").value<2021 || document.getElementById("gradyear").value>2024)
+					{
+						alert ("Graduation year must be between 2021-2024")
+						document.getElementById("gradyear").focus();
+						return false;
+					}
+				else
+					{
+						return true;
+					}
+			}
+	</script>
+	
+</head>
+<body>
+	<h1>
+		MIS3690 Student Survey
+	</h1>	
+	<p>
+		Please complete the following survey.  You must answer each question.  When you are done, please click on the Submit button.
+	</p>
+	<form method="post" action="https://lnickerson1.github.io/WebTech/release1/mailer.php" onsubmit="return check()">
+		<p>
+			First name: <input type="text" name="FirstName" id="fname"/> 
+			Last name: <input type="text" name="LastName" id="lname"/>
+		</p>
+		<p>
+			Gender: 
+			Male <input type="radio" name="Gender" value="Male"/> 
+			Female <input type="radio" name="Gender" value="Female"/>
+		</p>
+		<p>
+			What grade do you expect to receive? 
+			<select name="Grade">
+				<option value="A" selected="selected">A</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B">B</option>
+				<option value="B-">B-</option>
+				<option value="C+">C+</option>
+				<option value="C">C</option>
+				<option value="C-">C-</option>
+				<option value="D+">D+</option>
+				<option value="D">D</option>
+				<option value="D-">D-</option>
+				<option value="F">F</option>
+			</select>
+		</p>
+		<table>
+			<tr>
+				<td>Which topics did you find to be fun?</td>
+				<td>
+					<input type="checkbox" name="Images?" value="Yes" id="images"/> Images <br/>
+					<input type="checkbox" name="CSS?" value="Yes" id="css"/> CSS <br/>
+					<input type="checkbox" name="Tables?" value="Yes" id="tables"/> Tables <br/>
+					<input type="checkbox" name="Forms?" value="Yes" id="forms"/> Forms <br/>
+				</td>
+			</tr>
+		</table>
+		<p>
+			Year of Graduation: <input type="text" name="YearOfGraduation" id="gradyear"/>
+		</p>
+		<p>
+			Please add any comments you have <br/>
+			<textarea name="Comments" rows="5" cols="40"></textarea>
+		</p>
+		<p>
+			<button type="submit" name="submit" value="submit">Submit</button>
+			<button type="reset" name="reset" value="reset" style="margin-left: 50px;">Reset</button>
+		</p>
+	</form>
+</body>
+</html>
