@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function move()
+        {
+            var top_rand = Math.round(Math.random()*500);
+            var left_rand = Math.round(Math.random()*500);
+            document.getElementById("button").style.top=top_rand+"px";
+            document.getElementById("button").style.left=left_rand+"px";
+            var words = new Array("Click Me", "Move Me", "Click Here", "Button", "Next");
+            var words_number = Math.round(Math.random()*4);
+            document.getElementById("button").innerText=words[words_number];
+        }
+    </script>
+</head>
+<body>
+    <button id="button" style="position: absolute; top: 0px; left: 0px" onclick="move()">Click Me</button>
+</body>
+</html>
