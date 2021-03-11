@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        All About Logan
+    </title>
+    <style>
+        h1 {text-align: center; font-style: italic; font-size: 200%; width: auto; border: 15px double blue; padding: 2%; margin: 10px}
+        p {text-align:left; font-size:100%}
+        body {font-family:'Times New Roman', Times, serif; background-color:rgba(173, 87, 87, 0.281)}
+    </style>
+    <script>
+        var x=0;
+        var color_array = new Array("red", "orange", "yellow", "green", "blue", "indigo", "violet");
+        function change_color()
+        {
+            document.getElementById("h1").style.color=color_array[x];
+            if (x<7)
+            {
+                x=x+1;
+            }
+            else
+            {
+                x=0;
+            }
+            setTimeout("change_color()", 800);
+        }
+    </script>
+</head>
+<body onload="change_color()">
+    <a href="Interests.htm">
+        Interests
+    </a>
+    <hr />
+    <h1 id="h1">
+        All About Logan
+        <br />
+        <img src="Profile_Picture_Headshot.JPG" alt="Profile Picture Headshot"/>
+    </h1>
+    <hr />
+    <p>
+        My hometown is Gray, Maine. And I can be reached at: 
+        <br /><i>(207)632-0336</i> or 
+        <br /><i>lnickerson1@babson.edu</i>
+    </p>
+    <hr />
+    <p>
+        An interesting fact about me is that I have two tattoos. I have one on my arm which is for my two siblings, and my sister has a matching one. The second one is a Rocky qoute on my chest that is about my concussions.
+    </p>
+    <hr />
+</body>
+</html>
