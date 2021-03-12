@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x=75;
+        var y=50;
+        function draw()
+        {
+            var canvas=document.getElementById("canvas").getContext("2d");
+            canvas.clearRect(0, 0, 2000, 2000);
+            canvas.beginPath();
+            canvas.arc(x, 200, 75, 0, 2*Math.PI);
+            canvas.fillStyle="darkblue";
+            canvas.fill();
+            x=x+y;
+            if (x>1575)
+            {
+                y=-50;
+            }
+            if (x<100)
+            {
+                y=50;
+            } 
+            setTimeout("draw()",150);
+        }
+    </script>
+</head>
+<body onload="draw()">
+    <canvas id="canvas" width="2000" height="400"></canvas>
+</body>
+</html>
