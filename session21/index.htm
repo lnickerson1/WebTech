@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Page title goes here</title>
+
+	<style>
+		.class1 {font-weight: bold; background-color: lime;}
+	</style>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$("#button1").click(function()
+		{
+			$("#p1").slideDown(1000);
+		});
+		$("#button2").click(function()
+		{
+			$("#p2").text("Text Effect: Changed Text");
+		});
+		$("#button3").click(function()
+		{
+			$("#p3").append(": Appended Text");
+		});
+		$("#button4").click(function()
+		{
+			$("#div1").empty();
+		});
+		$("#button5").click(function()
+		{
+			$("#p5").toggleClass("class1");
+		});
+		$("#button6").click(function()
+		{
+			$("#p6").animate({fontSize: "50px"}, 1000);
+		});
+		$("#button7").click(function()
+		{
+			$("#p7").delay("1000").fadeIn();
+			$("#p8").delay("2000").fadeIn();
+		});
+	});
+	</script>
+  </head>
+  <body>
+	<button id="button1">Slide Down Effect</button>
+	<p id="p1" hidden>Slide Down Effect</p>
+	<button id="button2">Text Effect</button>
+	<p id="p2">Text Effect: starting Text</p>
+	<button id="button3">Append Effect</button>
+	<p id="p3">Append Effect</p>
+	<button id="button4">Empty Effect</button>
+	<div id="div1" style="background-color: lightsteelblue; height: 50px; width: 100px;">
+		<p id="p4">Empty Effect</p>
+	</div>
+	<button id="button5">Class Effect</button>
+	<p id="p5">Class Effect</p>
+	<button id="button6">Style Animation Effect</button>
+	<p id="p6">Style Animation Effect</p>
+	<button id="button7">Delay Effect</button>
+	<p id="p7" hidden>Delay Effect: 1 Second</p>
+	<p id="p8" hidden>Delay Effect: 2 Seconds</p>
+  </body>
+</html>
