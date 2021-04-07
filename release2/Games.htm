@@ -29,21 +29,13 @@
                     $("#reference_toggle_button").text("Show");
                 }
             })
-            $("#offsides_li").mouseenter(function()
+            $("#offsides_li").click(function()
             {
-                $("#offsides_img").fadeIn(500);
+                $("#offsides_img").fadeToggle(500);
             });
-            $("#offsides_li").mouseout(function()
+            $("#icing_li").click(function()
             {
-                $("#offsides_img").fadeOut(500);
-            });
-            $("#icing_li").mouseenter(function()
-            {
-                $("#icing_img").fadeIn(500);
-            });
-            $("#icing_li").mouseout(function()
-            {
-                $("#icing_img").fadeOut(500);
+                $("#icing_img").fadeToggle(500);
             });
         });
         games_pages=new Array("Game_1.htm", "Game_2.htm", "Game_3.htm", "Game_4.htm", "Game_5.htm", "Game_6.htm", "Game_7.htm")
@@ -107,10 +99,10 @@
             </li>
             <li><span class="Bold">Basic Hockey Rules:</span>
                 <ol>
-                    <li>A point is scored by shooting the puck into the opposing teams net. A player is not allowed to kick the puck into the net or purposely direct it into the net with any other body part.<div style="float: right;"><img id="offsides_img" src="https://assets1.sportsnet.ca/wp-content/uploads/2014/08/HOCKEY-101_RULES_offside-sml.jpg" alt="Offsides" title="Source: https://www.sportsnet.ca/hockey/hockey-101-rules-of-the-game/" style="width: 275px; margin-left: 15px; display: none;"><br><img id="icing_img" src="https://assets1.sportsnet.ca/wp-content/uploads/2014/08/HOCKEY-101_RULES_icing-sml.jpg" alt="Icing" title="Source: https://www.sportsnet.ca/hockey/hockey-101-rules-of-the-game/" style="width: 275px; margin-left: 15px; display: none"></div></li>
+                    <li>A point is scored by shooting the puck into the opposing teams net. A player is not allowed to kick the puck into the net or purposely direct it into the net with any other body part.</li>
                     <li>Each team has five skaters and one goalie on the ice at a time.</li>
                     <li>NHL periods are games are played over 3 periods consisting of 20 minutes.</li>
-                    <li>Each play begins with a face-off and ends when the official blows their whistle or a goal is scored.</li>
+                    <li>Each play begins with a face-off and ends when the official blows their whistle or a goal is scored.<div style="float: right;"><img id="offsides_img" src="https://assets1.sportsnet.ca/wp-content/uploads/2014/08/HOCKEY-101_RULES_offside-sml.jpg" alt="Offsides" title="Source: https://www.sportsnet.ca/hockey/hockey-101-rules-of-the-game/" style="width: 275px; margin-left: 15px; display: none;"><br><img id="icing_img" src="https://assets1.sportsnet.ca/wp-content/uploads/2014/08/HOCKEY-101_RULES_icing-sml.jpg" alt="Icing" title="Source: https://www.sportsnet.ca/hockey/hockey-101-rules-of-the-game/" style="width: 275px; margin-left: 15px; display: none"></div></li>
                     <li>For a list of penalities visit: <a href="https://www.sportsnet.ca/hockey/hockey-101-penalties/" target="_blank">Hockey Penalities</a>.</li>
                     <li id="offsides_li">Offsides is called when a player enters the offensive zone before the puck crosses the blue line and then their team interrupts the play of the puck in the offensive zone (by touching it).</li>
                     <li id="icing_li">Icing is called when a team shoots the puck from behind the red line to the opposing goal line without it touching anyone. This call is canceled if the team that shot the puck reaches the bottom of the offensive zone face off circles before the defending team.</li>
