@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A complete overview of the St. Louis Blues in the 2019 Stanley Cup Finals - Boston Bruins vs. St. Louis Blues."/>
+    <meta name="keywords" content="Boston Bruins, St. Louis Blues, NHL, Stanley Cup, Finals, 2019, Ice Hockey"/>
+    <meta name="author" content="Logan Nickerson"/>
+    <title>2019 Stanley Cup Finals - St. Louis Blues</title>
+    <link rel="stylesheet" href="St_Louis_Blues_Page_Style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        var click_counter=0;
+        $(function()
+        {
+            $("#loud_acknowledgment").click(function()
+            {
+                $("#horn_sound").slideToggle(500);
+            });
+            $("#Page_Header").click(function()
+            {
+                if (click_counter==0)
+                {
+                    $("h1").append(" ~ Champions")
+                    click_counter=click_counter+1;
+                }
+            });
+            $("#reference_toggle_button").click(function()
+            {
+                $("#References_Section p").toggle();
+                if ($("#reference_toggle_button").text()=="Show")
+                {
+                    $("#reference_toggle_button").text("Hide");
+                }
+                else
+                {
+                    $("#reference_toggle_button").text("Show");
+                }
+            })
+        });
+        function abbreviate()
+        {
+            document.getElementById("abbreviation").innerText="(STL)";
+        }
+        function expanded()
+        {
+            document.getElementById("abbreviation").innerText="";
+        }
+        function arena_interior()
+        {
+            document.getElementById("arena_image").src="https://claycorp.com/wp-content/uploads/2019/02/blues-5.jpg";
+        }
+        function arena_exterior()
+        {
+            document.getElementById("arena_image").src="http://www.enterprisecenter.com/assets/img/EC_Main-Exterior-1120x480-d21d460475.jpg";
+        }
+        var x=400-2;
+        function zoom_animation()
+        {
+            if (x==400-2)
+            {
+                zoom_in();
+            }
+            else if (x==800)
+            {
+                zoom_out();
+            }
+        }
+        function zoom_in()
+        {
+            x=x+2;
+            document.getElementById("playoff_bracket").style.width=x+"px";
+            if (x<800)
+            {
+                setTimeout("zoom_in()", 1);
+            }
+        }
+        function zoom_out()
+        {
+            x=x-2;
+            document.getElementById("playoff_bracket").style.width=x+"px";
+            if (x>400)
+            {
+                setTimeout("zoom_out()", 1);
+            }
+            else
+            {
+                x=400-2;
+            }
+        }
+        games_pages=new Array("Game_1.htm", "Game_2.htm", "Game_3.htm", "Game_4.htm", "Game_5.htm", "Game_6.htm", "Game_7.htm")
+        function random()
+        {
+            var random_pick=Math.round(Math.random()*(games_pages.length-1));
+            document.getElementById("random_link").href=games_pages[random_pick];
+        }
+    </script>
+</head>
+<body>
+    <div id="Nav_Bar" class="Nav_Bar">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="Boston_Bruins.htm">Boston Bruins</a></li>
+            <li><a href="St_Louis_Blues.htm" class="Active">St. Louis Blues</a></li>
+            <li class="Dropdown">
+              <a href="Games.htm">Games</a>
+                <div class="Dropdown_Content">
+                    <a href="Game_1.htm">Game 1</a>
+                    <a href="Game_2.htm">Game 2</a>
+                    <a href="Game_3.htm">Game 3</a>
+                    <a href="Game_4.htm">Game 4</a>
+                    <a href="Game_5.htm">Game 5</a>
+                    <a href="Game_6.htm">Game 6</a>
+                    <a href="Game_7.htm">Game 7</a>
+                    <a id="random_link" href="" class="Last" onclick="random()">Random</a>
+                </div>
+            </li>
+            <li><a href="Celebrations.htm">Celebrations</a></li>
+            <li><a href="About_Me.htm">About Me</a></li>
+            <li><a href="Contact_Me.htm">Contact Me</a></li>
+            <li><a href="Credits.htm">Credits</a></li>
+        </ul>
+    </div>
+
+    <div id="Page_Header" style="text-align: center; margin-top: 5px;" onmouseover="abbreviate()" onmouseout="expanded()">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/St._Louis_Blues_logo.svg/330px-St._Louis_Blues_logo.svg.png" alt="St_Louis_Blues_Logo" title="Source: https://en.wikipedia.org/wiki/St._Louis_Blues" style="width: 150px; height: 125px; vertical-align: middle; margin-right: 15px;">
+        <h1 style="display: inline; vertical-align: middle;">St. Louis Blues <span id="abbreviation"></span> in the 2019 Stanley Cup Finals</h1>
+    </div>
+
+    <div id="Roster_Section">
+        <h2 style="margin-top: 0px;">Roster</h2>
+        <table class="Roster">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Pos</th>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Jake Allen</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>Ivan Barbashev</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Jordan Binnington</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Samuel Blais</td>
+                <td>LW</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>Robert Burtozzo</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Jay Bouwmeester</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Tyler Bozak</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Vince Dunn</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Joel Edmundson</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Robby Febbri</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Carl Gunnarsson</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Patrick Maroon</td>
+                <td>LW</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>Ryan O'Reilly</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>Colton Parayko</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>David Perron</td>
+                <td>LW</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Alex Pietrangelo - <abbr title="Captain">C</abbr></td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Zach Sanford</td>
+                <td>LW</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Brayden Schenn</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Jaden Schwartz</td>
+                <td>LW</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Alexander Steen - <abbr title="Assistant Captain">A</abbr></td>
+                <td>LW</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>Oscar Sundqvist</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>Vladmir Tarasenko - <abbr title="Assistant Captain">A</abbr></td>
+                <td>RW</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Robert Thomas</td>
+                <td>C</td>
+            </tr>
+        </table>
+        <img src="https://4.bp.blogspot.com/-HhasvxFJKeg/WtGnSWX-hcI/AAAAAAAAF04/6M99o198kvApXHtKMQ7Y9xfHd50k7UgHgCLcBGAs/s400/Alex%252BPietrangelo%252BSt%252BLouis%252BBlues%252Bv%252BToronto%252BaIHhmMTQg9hl.jpg" alt="Alex_Pietrangelo" title="Source: http://lkorac10.blogspot.com/2018/04/blues-defenseman-alex-pietrangelo.html" style="width: 200px; height: 250px; margin-right: 15px;">
+        <img src="https://i.pinimg.com/originals/c6/38/5b/c6385b2c230cf3bfe51f5b7dece513e0.jpg" alt="Alexander_Steen" title="Source: https://i.pinimg.com/originals/c6/38/5b/c6385b2c230cf3bfe51f5b7dece513e0.jpg" style="width: 200px; height: 250px; margin-right: 15px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Vladimir_Tarasenko_2017-10-04.jpg/865px-Vladimir_Tarasenko_2017-10-04.jpg" alt="Vladmir_Tarasenko" title="Source: https://commons.wikimedia.org/wiki/File:Vladimir_Tarasenko_2017-10-04.jpg" style="width: 200px; height: 250px;">
+    </div>
+
+    <br>
+
+    <div id="Road_To_The_Finals_Section">
+        <img id="playoff_bracket" src="https://www.nbcsports.com/sites/nbcsports.com/files/nhl-playoff-bracket-2019-61219.png" alt="Playoff_Bracket" title="Source: https://www.nbcsports.com/nhl/stanley-cup-playoffs/2019" style="width: 400px; float: right; margin: 0px 0px 15px 15px;"  onclick="zoom_animation()">
+        <h2>Road to the Finals</h2>
+        <p> 2019 was the St. Louis Blues' sixth appearance in the Stanley Cup Finals. Their last appearance was in 1970, when the Boston Bruins swept them. Up until 2019 the St. Louis Blues had appeared in the finals four but lost all of them.&sup1; The Blues finished the regular season with 99 points putting them in third in the Central Division, fifth in the Western Conference, and twelfth in the league.&sup3; In the post season the Blues defeated the Winnipeg Jets in six games in the first round. They then beat the the Dallas Stars 4-3. Finally they were crowned champions of the Western Conference after their six game series victory over the San Jose Sharks. They would then moved on to face the Boston Bruins in the finals.&sup2;</p>
+    </div>
+
+    <br>
+
+    <div id="Home_Arena_Section">
+        <img id="arena_image" src="http://www.enterprisecenter.com/assets/img/EC_Main-Exterior-1120x480-d21d460475.jpg" alt="Enterprise_Center" title="Source: http://www.enterprisecenter.com/about-us" style="float: left; width: 300px; height: 200px; margin: 0px 15px 15px 0px;" onmouseover="arena_interior()" onmouseout="arena_exterior()">
+        <h2>Home Arena</h2>
+        <p>The St. Louis Blues home arena is the <a href="http://www.enterprisecenter.com/" target="_blank">Enterprise Center</a>, located in St. Louis, Missouri at 1401 Clark Ave, St. Louis, MO 63103. The Blues are the only sports team to use the arena however it is also a popular sight for concerts and other events. It has a capacity of 19,260 and was opened in 1994 under the alias of the Kiel Center.&sup2; It wouldn't come to be named the Enterprise Center until 2018.&sup2;</p>
+    </div>
+
+    <br>
+
+    <div id="Horn_Section">
+        <h2>Goal Horn (Loud!)</h2>
+        <p> <input type="checkbox" id="loud_acknowledgment"/> I understand this can be loud</p>
+        <audio id="horn_sound" src="Blues_Goal_Horn.mp3" controls title="Source: https://www.youtube.com/watch?v=g7do5rl9RFo" style="float: left; margin-bottom: 15px; display: none;"></audio>
+    </div>
+
+    <br>
+
+    <div id="References_Section">
+        <hr style="clear: both;">
+        <h2>References</h2>
+        <button id="reference_toggle_button" style="margin-bottom: 10px">Show</button>
+        <p style="display: none;"> [1] <a href="https://en.wikipedia.org/wiki/2019_Stanley_Cup_Finals" target="_blank">https://en.wikipedia.org/wiki/2019_Stanley_Cup_Finals</a>
+        <br>
+        [2] <a href="https://en.wikipedia.org/wiki/Enterprise_Center" target="_blank">https://en.wikipedia.org/wiki/Enterprise_Center</a>
+        <br>
+        [3] <a href="https://www.nhl.com/standings/2018/" target="_blank">https://www.nhl.com/standings/2018/</a>
+        </p>
+    </div>
+</body>
+</html>

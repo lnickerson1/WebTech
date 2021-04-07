@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A complete overview of the 2019 Stanley Cup Finals - Boston Bruins vs. St. Louis Blues."/>
+    <meta name="keywords" content="Boston Bruins, St. Louis Blues, NHL, Stanley Cup, Finals, 2019, Ice Hockey"/>
+    <meta name="author" content="Logan Nickerson"/>
+    <title>2019 Stanley Cup Finals - General</title>
+    <link rel="stylesheet" href="Mobile_Style.css" type="text/css" />
+    <style>
+        div.Img_Gallery img {width: calc(50% - 10px); margin-right: 15px; margin-bottom: 15px; float: left; height: 95px;}
+        div.Img_Gallery img.Last {margin-right: 0px;}
+    </style>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(function()
+        {
+            $("#reference_toggle_button").click(function()
+            {
+                $("#References_Section p").toggle();
+                if ($("#reference_toggle_button").text()=="Show")
+                {
+                    $("#reference_toggle_button").text("Hide");
+                }
+                else
+                {
+                    $("#reference_toggle_button").text("Show");
+                }
+            });
+            $("#menu_button").click(function()
+            {
+                $("#nav_menu").slideToggle();
+            });
+        });
+        games_pages=new Array("Game_1.htm", "Game_2.htm", "Game_3.htm", "Game_4.htm", "Game_5.htm", "Game_6.htm", "Game_7.htm")
+        function random()
+        {
+            var random_pick=Math.round(Math.random()*6);
+            document.getElementById("random_link").href=games_pages[random_pick];
+        }
+    </script>
+</head>
+<body>
+    <div id="Nav_Bar" class="Nav_Bar">
+        <img id="menu_button" src="Menu_Icon.png" alt="Menu_Icon" style="width: 10%; margin: 10px 0px 5px 0px;">
+        <ul id="nav_menu" style="display: none;">
+            <li><a href="index.htm" class="Active">Home</a></li>
+            <li><a href="Boston_Bruins.htm">Boston Bruins</a></li>
+            <li><a href="St_Louis_Blues.htm">St. Louis Blues</a></li>
+            <li class="Dropdown">
+              <a href="Games.htm">Games</a>
+                <div class="Dropdown_Content">
+                    <a href="Game_1.htm">Game 1</a>
+                    <a href="Game_2.htm">Game 2</a>
+                    <a href="Game_3.htm">Game 3</a>
+                    <a href="Game_4.htm">Game 4</a>
+                    <a href="Game_5.htm">Game 5</a>
+                    <a href="Game_6.htm">Game 6</a>
+                    <a href="Game_7.htm">Game 7</a>
+                    <a id="random_link" href="" class="Last" onclick="random()">Random</a>
+                </div>
+            </li>
+            <li><a href="Celebrations.htm">Celebrations</a></li>
+            <li><a href="About_Me.htm">About Me</a></li>
+            <li><a href="Contact_Me.htm">Contact Me</a></li>
+            <li><a href="Credits.htm">Credits</a></li>
+        </ul>
+    </div>
+
+    <div id="Page_Header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/2019_Stanley_Cup_Finals_logo.png" alt="2019_Stanley_Cup_Finals_Logo" title="Source: https://en.wikipedia.org/wiki/2019_Stanley_Cup_Finals" style="width: 30%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+        <h1 style="margin-top: 0px;">The 2019 NHL Stanley Cup Finals - Boston Bruins vs. St. Louis Blues</h1>
+        <p>Each year the Stanley cup trophy is awarded to the winner of the <a href="https://www.nhl.com/" target="_blank">National Hockey League (NHL)</a> playoff tournament. The 2019 finals featured the Eastern Conference champions, the <a href="St_Louis_Blues.htm">Boston Bruins</a>, and the Western Conference champions, the <a href="St_Louis_Blues.htm">St. Louis Blues</a>.</p>
+    </div>
+
+    <div id="About_The_Cup_Section">
+        <h2>About the Cup</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Stanley_Cup%2C_2015.jpg/330px-Stanley_Cup%2C_2015.jpg" alt="Stanley_Cup" title="Source: https://en.wikipedia.org/wiki/Stanley_Cup" style="float: left; width: 30%; margin: 0px 15px 0px 0px; height: 165px;">
+        <p>The Stanley Cup "is the oldest existing trophy to be awarded to a professional sports franchise in North America, and the International Ice Hockey Federation (IIHF) considers it to be one of the "most important championships available to the sport".&sup1; "The trophy was first awarded in 1893" thus making  the 2019 finals its 126<sup>th</sup> appearance.&sup1; "The original bowl was made of silver and is 18.5 centimeters (7.28 inches) high and 29 centimeters (11.42 inches) wide. The current Stanley Cup is topped with a copy of the original bowl, made of a silver and nickel alloy. It has a height of 89.54 centimeters (35.25 inches) and weighs 15.5 kilograms (34.5 lb). A new Stanley Cup is not made each year, unlike the trophies awarded by the other major professional sports leagues of North America.  Every year since 1924, a select portion of the winning players, coaches, management, and club staff names are engraved on its bands, which is unusual among trophies. However, there is not enough room to include all the players and non-players, so some names must be omitted."&sup1;</p>
+    </div>
+
+    <br>
+
+    <div id="Results_Section">
+        <h2>Results</h2>
+        <p>The St. Louis Blues were crowned the champions of the 2019 NHL season in their 4 game victory over the Boston Bruins. Ryan O'Reilly of the St. Louis Blues was awarded the <a href="https://en.wikipedia.org/wiki/Conn_Smythe_Trophy" target="_blank">Conn Smythe Trophy</a> as the most valuable player in the playoffs. For more information on the series as a whole or individual games visit the <a href="Games.htm">Games</a> page or directly access each game via the dropdown menu in the navigation bar.</p>
+    </div>
+
+    <div id="Series_Images_Section">
+        <h2>Series Images</h2>
+        <div class="Img_Gallery">
+            <img src="https://cdn.vox-cdn.com/thumbor/h3LPEPAGpudgiSo7Te_h0uNrDag=/0x0:3000x2279/920x613/filters:focal(1260x900:1740x1380):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63996560/1154473525.jpg.0.jpg" alt="Finals_Image1" title="Source: https://www.nucksmisconduct.com/2019/6/12/18663523/2019-stanley-cup-finals-open-thread-game-7-june-12-19">
+            <img src="https://cdn.vox-cdn.com/thumbor/lFsvMtBCjfO2Y8XpYSPOIpONGgY=/0x0:3451x2356/920x613/filters:focal(1771x891:2323x1443):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63904351/usa_today_10591126.0.jpg" alt="Finals_Image2" title="Source: https://www.secondcityhockey.com/2019/5/27/18641366/2019-nhl-playoffs-stanley-cup-final-blues-vs-bruins-game-1-how-to-watch-start-time-tv-schedule-nbc" class="Last">
+            <img src="https://www.masslive.com/resizer/4vLHxYN5reolRvZeoGdfiC9QhaQ=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/TR3YBRB4Q5ARNONUKTYWRT72HM.jpg" alt="Finals_Image3" title="Source: https://www.masslive.com/bruins/2019/06/boston-bruins-vs-st-louis-blues-live-score-updates-game-5-stanley-cup-final.html">
+            <img src="https://www.mlive.com/resizer/8mttFp9kn_7_XtFxKUfaguv0Nns=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/G6VU2FHFBZH6BP7XOSDPISVBAA.jpg" alt="Finals_Image4" title="Source: https://www.mlive.com/redwings/2019/06/2019-stanley-cup-final-bruins-vs-blues-game-7-live-chat.html" class="Last">
+            <img src="https://static01.nyt.com/images/2019/06/12/sports/12nhl-blues/merlin_156372426_60278fb8-4fdc-4be7-bf79-d1970e1c856b-jumbo.jpg?quality=90&auto=webp" alt="Finals_Image5" title="Source: https://static01.nyt.com/images/2019/06/12/sports/12nhl-blues/merlin_156372426_60278fb8-4fdc-4be7-bf79-d1970e1c856b-jumbo.jpg?quality=90&auto=webp">
+            <img src="https://static01.nyt.com/images/2019/06/13/sports/13nhl-dress-print/merlin_156376893_5d9c1304-7983-4d99-b2c1-35f57c562953-jumbo.jpg?quality=90&auto=webp" alt="Finals_Image6" title="Source: https://www.nytimes.com/2019/06/12/sports/st-louis-blues-stanley-cup.html" class="Last">
+        </div>
+    </div>
+
+    <br>
+
+    <div id="References_Section">
+        <hr>
+        <h2>References</h2>
+        <button id="reference_toggle_button" style="margin-bottom: 10px">Show</button>
+        <p style="display: none;">
+            [1] <a href="https://en.wikipedia.org/wiki/Stanley_Cup" target="_blank">https://en.wikipedia.org/wiki/Stanley_Cup</a>
+            <br>
+            [2] <a href="https://en.wikipedia.org/wiki/2019_Stanley_Cup_Finals" target="_blank">https://en.wikipedia.org/wiki/2019_Stanley_Cup_Finals</a>
+        </p>
+    </div>
+</body>
+</html>

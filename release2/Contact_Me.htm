@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the creator of the website featuring a complete overview of the 2019 Stanley Cup Finals - Boston Bruins vs. St. Louis Blues."/>
+    <meta name="keywords" content="Boston Bruins, St. Louis Blues, NHL, Stanley Cup, Finals, 2019, Ice Hockey, Contact, Email, Phone, Submit Request"/>
+    <meta name="author" content="Logan Nickerson"/>
+    <title>2019 Stanley Cup Finals - Contact Me</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+    <style>
+        Select, textarea {font-size: 20px; line-height: 200%; font-family: 'Times New Roman', Times, serif; margin: -10px 0px 0px 0px;}
+    </style>
+    <script>
+        function validate()
+        {
+            if (document.getElementById("first_name_input").value=="")
+            {
+                alert ("A first name is required");
+                document.getElementById("first_name_input").focus();
+                return false;
+            }
+            else if (document.getElementById("last_name_input").value=="")
+            {
+                alert ("A last name is required");
+                document.getElementById("last_name_input").focus();
+                return false;
+            }
+            else if (document.getElementById("reason_option_question").checked==false && document.getElementById("reason_option_comment").checked==false && document.getElementById("reason_option_problem").checked==false && document.getElementById("reason_option_other").checked==false)
+            {
+                alert ("A reason for contact is required");
+                return false;
+            }
+            else if (document.getElementById("subject_selection").value=="Select")
+            {
+                alert ("A subject of focus is required");
+                document.getElementById("subject_selection").focus();
+                return false;
+            }
+            else if (document.getElementById("text_area").value=="")
+            {
+                alert ("A response is required");
+                document.getElementById("text_area").focus();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        games_pages=new Array("Game_1.htm", "Game_2.htm", "Game_3.htm", "Game_4.htm", "Game_5.htm", "Game_6.htm", "Game_7.htm")
+        function random()
+        {
+            var random_pick=Math.round(Math.random()*(games_pages.length-1));
+            document.getElementById("random_link").href=games_pages[random_pick];
+        }
+    </script>
+</head>
+<body>
+    <div class="Nav_Bar">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="Boston_Bruins.htm">Boston Bruins</a></li>
+            <li><a href="St_Louis_Blues.htm">St. Louis Blues</a></li>
+            <li class="Dropdown">
+              <a href="Games.htm">Games</a>
+                <div class="Dropdown_Content">
+                    <a href="Game_1.htm">Game 1</a>
+                    <a href="Game_2.htm">Game 2</a>
+                    <a href="Game_3.htm">Game 3</a>
+                    <a href="Game_4.htm">Game 4</a>
+                    <a href="Game_5.htm">Game 5</a>
+                    <a href="Game_6.htm">Game 6</a>
+                    <a href="Game_7.htm">Game 7</a>
+                    <a id="random_link" href="" class="Last" onclick="random()">Random</a>
+                </div>
+            </li>
+            <li><a href="Celebrations.htm">Celebrations</a></li>
+            <li><a href="About_Me.htm">About Me</a></li>
+            <li><a href="Contact_Me.htm" class="Active">Contact Me</a></li>
+            <li><a href="Credits.htm">Credits</a></li>
+        </ul>
+    </div>
+
+    <div id="Page_Header" style="text-align: center; margin-top: 5px;">
+        <h1 style="display: inline; vertical-align: middle;">Contact Me</h1>
+    </div>
+
+    <div id="External_Information_Section">
+        <h2 style="margin-top: 0px;">External Methods</h2>
+        <ol>
+            <li><span class="Bold">Phone:</span> (207)632-0336</li>
+            <li><span class="Bold">Email:</span> lnickerson1@babson.edu</li>
+        </ol>
+    </div>
+
+    <div id="Internal_Section">
+        <h2>Internal Form</h2>
+        <form method="post" action="http://stanleycupfinals19.space/mailer.php" onsubmit="return validate()">
+            <ol>
+                <li><span class="Bold">First Name:</span><input type="text" name="First" id="first_name_input"/></li>
+                <li><span class="Bold">Last Name:</span><input type="text" name="Last" id="last_name_input"/></li>
+                <li><span class="Bold">Nature of reason for contact:</span>
+                    <ol>
+                        <li><input type="radio" name="Reason" value="Question" id="reason_option_question"/>Question</li>
+                        <li><input type="radio" name="Reason" value="Comment" id="reason_option_comment"/>Comment</li>
+                        <li><input type="radio" name="Reason" value="Problem" id="reason_option_problem"/>Problem</li>
+                        <li><input type="radio" name="Reason" value="Other" id="reason_option_other"/>Other</li>
+                    </ol>
+                </li>
+                <li>
+                    Please select the subject of focus:
+                    <select name="Subject" id="subject_selection">
+                        <option value="Select" selected="selected">Select</option>
+                        <option value="Website">Whole Website</option>
+                        <option value="Home">Home Page</option>
+                        <option value="Boston_Bruins">Boston Bruins Page</option>
+                        <option value="St_Louis_Blues">St. Louis Blues Page</option>
+                        <option value="Games">Games Page</option>
+                        <option value="Game1">Game 1 Page</option>
+                        <option value="Game1">Game 2 Page</option>
+                        <option value="Game1">Game 3 Page</option>
+                        <option value="Game1">Game 4 Page</option>
+                        <option value="Game1">Game 5 Page</option>
+                        <option value="Game1">Game 6 Page</option>
+                        <option value="Game1">Game 7 Page</option>
+                        <option value="Celebrations">Celebrations Page</option>
+                        <option value="About_Me">About Me Page</option>
+                        <option value="Contact_Me">Contact Me Page</option>
+                        <option value="Credits">Credits Page</option>
+                    </select>
+                </li>
+                <li>
+                    Please type your response below:<br/>
+                    <textarea name="Comments" rows="5" cols="50" id="text_area"></textarea>
+                </li>
+                <li>
+                    <button type="submit" name="submit" value="submit">Submit</button>
+                    <button type="reset" name="reset" value="reset" style="margin-left: 15px;">Reset</button>
+                </li>
+            </ol>
+        </form>
+    </div>
+
+</body>
+</html>

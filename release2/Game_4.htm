@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A complete overview of Game 4 in the 2019 Stanley Cup Finals - Boston Bruins vs. St. Louis Blues."/>
+    <meta name="keywords" content="Boston Bruins, St. Louis Blues, NHL, Stanley Cup, Finals, 2019, Ice Hockey, Scores, Game 1, Game 2, Game 3, Game 4, Game 5, Game 6, Game 7"/>
+    <meta name="author" content="Logan Nickerson"/>
+    <title>2019 Stanley Cup Finals - Game 4</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(function()
+        {
+            $("#reference_toggle_button").click(function()
+            {
+                $("#References_Section p").toggle();
+                if ($("#reference_toggle_button").text()=="Show")
+                {
+                    $("#reference_toggle_button").text("Hide");
+                }
+                else
+                {
+                    $("#reference_toggle_button").text("Show");
+                }
+            })
+        });
+        games_pages=new Array("Game_1.htm", "Game_2.htm", "Game_3.htm", "Game_4.htm", "Game_5.htm", "Game_6.htm", "Game_7.htm")
+        function random()
+        {
+            var random_pick=Math.round(Math.random()*(games_pages.length-1));
+            document.getElementById("random_link").href=games_pages[random_pick];
+        }
+    </script>
+</head>
+<body>
+    <div id="Nav_Bar" class="Nav_Bar">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="Boston_Bruins.htm">Boston Bruins</a></li>
+            <li><a href="St_Louis_Blues.htm">St. Louis Blues</a></li>
+            <li class="Dropdown">
+              <a href="Games.htm" class="Active">Games</a>
+                <div class="Dropdown_Content">
+                    <a href="Game_1.htm">Game 1</a>
+                    <a href="Game_2.htm">Game 2</a>
+                    <a href="Game_3.htm">Game 3</a>
+                    <a href="Game_4.htm" class="Active">Game 4</a>
+                    <a href="Game_5.htm">Game 5</a>
+                    <a href="Game_6.htm">Game 6</a>
+                    <a href="Game_7.htm">Game 7</a>
+                    <a id="random_link" href="" class="Last" onclick="random()">Random</a>
+                </div>
+            </li>
+            <li><a href="Celebrations.htm">Celebrations</a></li>
+            <li><a href="About_Me.htm">About Me</a></li>
+            <li><a href="Contact_Me.htm">Contact Me</a></li>
+            <li><a href="Credits.htm">Credits</a></li>
+        </ul>
+    </div>
+
+    <div id="Page_Header">
+        <h1>2019 Stanley Cup Finals Game 4</h1>
+    </div>
+
+    <div id="Game_Details_Section">
+        <h2 style="margin-top: 0px;">Game Details</h2>
+        <ol>
+            <li><span class="Bold">Date:</span> June 3, 2019</li>
+            <li><span class="Bold">Location:</span> Enterprise Center</li>
+            <li><span class="Bold">Starting Goalies:</span>
+                <ol>
+                    <li>Boston Bruins: Tuukka Rask</li>
+                    <li>St. Louis Blues: Jordan Binnington&sup1;</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div id="Outcome_Section">
+        <h2>Outcome: St. Louis Wins 4-2 (Series: 2-2)</h2>
+        <p>The blues tied up the series at 2-2 with their 4-2 victory over the Bruins.</p>
+    </div>
+
+    <div id="Score_By_Period_Section">
+        <h2>Score by Period</h2>
+        <table class="Score_By_Period">
+            <tr>
+                <th>Period</th>
+                <th>Team</th>
+                <th>Name</th>
+                <th>Time</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>STL</td>
+                <td class="Name">Ryan O'Reilly</td>
+                <td>0:43</td>
+                <td>1–0 STL</td>
+            </tr>
+            <tr>
+                <td>BOS</td>
+                <td class="Name">Charlie Coyle</td>
+                <td>13:14</td>
+                <td>1–1</td>
+            </tr>
+            <tr>
+                <td>STL</td>
+                <td class="Name">Vladimir Tarasenko</td>
+                <td>15:30</td>
+                <td>2–1 STL</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>BOS - <abbr title="Shorthanded">SH</abbr></td>
+                <td class="Name">Brandon Carlo</td>
+                <td>14:19</td>
+                <td>2-2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td>STL</td>
+                <td class="Name">Ryan O'Reilly</td>
+                <td>10:38</td>
+                <td>3–2 STL</td>
+            </tr>
+            <tr>
+                <td>STL - <abbr title="Empty Net">EN</abbr></td>
+                <td class="Name">Brayden Schenn</td>
+                <td>18:31</td>
+                <td>4-2 STL</td>
+            </tr>
+        </table>&sup1;
+    </div>
+
+    <br>
+
+    <div id="Important_Events_Section">
+        <h2>Important Events</h2>
+        <ul>
+            <li>In the second period Brandon Carlo scored on a penalty kill resulting from an illegal check to head penalty on BOS by Connor Clifton.</li>
+            <li>At the end of the third period Boston pulled their goalie to gain an extra skater however, Brayden Schenn scored on the empty net securing the St. Louis victory.&sup1;</li>
+        </ul>
+    </div>
+
+    <div id="Video_Recap_Section">
+        <h2>Video Recap</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ldYj_MtCqRM" title="Source: https://www.youtube.com/embed/ldYj_MtCqRM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float: left; margin-bottom: 15px;"></iframe>
+    </div>
+
+    <br>
+
+    <div id="References_Section">
+        <hr>
+        <h2>References</h2>
+        <button id="reference_toggle_button" style="margin-bottom: 10px">Show</button>
+        <p style="display: none;">[1] <a href="https://en.wikipedia.org/wiki/2019_Stanley_Cup_Finals" target="_blank">https://en.wikipedia.org/wiki/2019_Stanley_Cup_Finals</a></p>
+    </div>
+</body>
+</html>

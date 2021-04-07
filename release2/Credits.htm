@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Credits for resources hosted on the website featuring a complete overview of the 2019 Stanley Cup Finals - Boston Bruins vs. St. Louis Blues."/>
+    <meta name="keywords" content="Boston Bruins, St. Louis Blues, NHL, Stanley Cup, Finals, 2019, Ice Hockey, Credits, Youtube, Elite Goal Horns"/>
+    <meta name="author" content="Logan Nickerson"/>
+    <title>2019 Stanley Cup Finals - Credits</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+    <script>
+        games_pages=new Array("Game_1.htm", "Game_2.htm", "Game_3.htm", "Game_4.htm", "Game_5.htm", "Game_6.htm", "Game_7.htm")
+        function random()
+        {
+            var random_pick=Math.round(Math.random()*(games_pages.length-1));
+            document.getElementById("random_link").href=games_pages[random_pick];
+        }
+    </script>
+</head>
+<body>
+    <div class="Nav_Bar">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="Boston_Bruins.htm">Boston Bruins</a></li>
+            <li><a href="St_Louis_Blues.htm">St. Louis Blues</a></li>
+            <li class="Dropdown">
+              <a href="Games.htm">Games</a>
+                <div class="Dropdown_Content">
+                    <a href="Game_1.htm">Game 1</a>
+                    <a href="Game_2.htm">Game 2</a>
+                    <a href="Game_3.htm">Game 3</a>
+                    <a href="Game_4.htm">Game 4</a>
+                    <a href="Game_5.htm">Game 5</a>
+                    <a href="Game_6.htm">Game 6</a>
+                    <a href="Game_7.htm">Game 7</a>
+                    <a id="random_link" href="" class="Last" onclick="random()">Random</a>
+                </div>
+            </li>
+            <li><a href="Celebrations.htm">Celebrations</a></li>
+            <li><a href="About_Me.htm">About Me</a></li>
+            <li><a href="Contact_Me.htm">Contact Me</a></li>
+            <li><a href="Credits.htm" class="Active">Credits</a></li>
+        </ul>
+    </div>
+
+    <div id="Page_Header" style="text-align: center; margin-top: 5px;">
+        <h1 style="display: inline; vertical-align: middle;">Credits</h1>
+    </div>
+
+    <div id="Credits_Section">
+        <h2 style="margin-top: 0px;">Credits</h2>
+        <ol style="margin-bottom: 10px;">
+            <li><span class="Bold">Boston Bruins Goal Horn:</span> Boston Bruins 2021 Goal Horn (No Reverb).mp3 featured on "Boston Bruins" page downloaded from <a href="https://www.youtube.com/watch?v=JLB8v4SHGbk">https://www.youtube.com/watch?v=JLB8v4SHGbk</a></li>
+            <li><span class="Bold">St. Louis Goal Horn:</span> St. Louis Blues 2021 Goal Horn.mp3 featured on "St. Louis Blues" page downloaded from <a href="https://www.youtube.com/watch?v=g7do5rl9RFo">https://www.youtube.com/watch?v=g7do5rl9RFo</a></li>
+        </ol>
+        <p>Permission for both of these files was granted upon request by Elite Goal Horns on March 11<sup>th</sup>, 2021</p>
+        <p style="margin-top: 0px;">The remaining images, videos, and information is not hosted on this website but linked directly from its source. References for information can also be found on each page it is quoted on.</p>
+    </div>
+
+    <br>
+
+    <div id="Honor_Code_Section">
+        <h2 style="margin-top: 0px;">Honor Code</h2>
+        <p>“I have abided by the Babson Code of Ethics in this work and pledge to be better than that which would compromise my integrity.”</p>
+        <img src="Signature.png" alt="signature.png">
+    </div>
+</body>
+</html>
